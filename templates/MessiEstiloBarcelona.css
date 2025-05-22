@@ -1,0 +1,174 @@
+/* --- Estilo para la Página de Detalle --- */
+body.pagina_detalle {
+    /* Fondo degradado de azul a azulgrana */
+    background: linear-gradient(to bottom, #003594, #003594 30%, #c60c30);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f0f0f0; /* Color de texto principal para la página */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.encabezado_detalle {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centramos los elementos horizontalmente por ahora */
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.encabezado_detalle h2 {
+    margin: 0; /* Elimina el margen predeterminado del h2 */
+}
+
+.contenedor_detalle {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo muy transparente para el contenedor principal */
+    margin: 30px auto;
+    width: 95%;
+    max-width: 1200px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor_detalle h2 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffd700;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenido_principal_detalle {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagen_messi_completa {
+    width: auto;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.informacion_detalle {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente para mejor contraste */
+    color: #f0f0f0; /* Color de texto claro */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.informacion_detalle h3 {
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #ffd700;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.informacion_detalle p.texto_introduccion {
+    font-size: 1.15em;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #eee;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.informacion_detalle ul {
+    list-style: disc;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    color: #eee;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.informacion_detalle li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.seccion_detalle .contenido_seccion {
+    display: block; /* Cambiado a block para que el multimedia esté debajo */
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenido_seccion h3 {
+    font-size: 1.8em;
+    color: #ffd700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.texto_seccion {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px; /* Espacio entre el texto y el multimedia */
+}
+
+.multimedia_seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.elemento_multimedia {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.seccion_detalle.solo_texto .contenido_seccion {
+    display: block;
+}
+
+.contenedor_detalle .enlace_volver {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #ffd700;
+    color: #003594;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor_detalle .enlace_volver:hover {
+    background-color: #c60c30;
+    color: #f0f0f0;
+}
+
+.informacion_detalle p.texto_conclusion {
+    font-style: italic;
+    color: #ddd;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+}

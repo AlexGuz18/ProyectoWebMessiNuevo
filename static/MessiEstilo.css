@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* Fuente genérica más simple */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("FondoMessi/MessiFondo.jpg");
+    background-size: cover; /* Cubrir el fondo */
+    background-position: center; /* Centrar la imagen */
+    background-attachment: fixed; /* Fijar la imagen */
+    min-height: 100vh;
+    background-color: #000; /* Color de respaldo si la imagen no carga */
+}
+
+.nombre_completo {
+    color: gold; /* Color dorado simple */
+    font-size: 2.5em; /* Tamaño más pequeño */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Margen inferior más pequeño */
+    text-transform: uppercase; /* Manteniendo la transformación */
+}
+
+/* Navegación básica */
+nav {
+    width: 100%;
+    background-color: black; /* Fondo negro sólido */
+    padding: 10px 0;
+    text-align: center; /* Centrar contenido */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; /* Sin padding */
+    margin: 10px 0 0; /* Margen superior simple */
+    display: inline-block; /* Para centrar la lista */
+}
+
+nav ul li {
+    display: inline; /* Elementos en línea */
+    margin: 0 10px; /* Espacio entre elementos */
+}
+
+nav ul li a {
+    color: white; /* Texto blanco */
+    text-decoration: none;
+    font-weight: normal; /* Sin negrita */
+    font-size: 1em;
+    padding: 5px 8px; /* Padding más simple */
+    border-radius: 0; /* Sin bordes redondeados */
+}
+
+nav ul li a:hover {
+    color: lightgray; /* Cambio de color simple al hover */
+    background-color: transparent; /* Sin cambio de fondo */
+}
+
+/* Contenido principal */
+main {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0; /* Ajuste del margen superior e inferior */
+    width: 90%;
+    flex-grow: 1;
+}
+
+article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article .multimedia_detalle {
+    margin-bottom: 20px; /* Ajuste del margen inferior */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+article .multimedia_detalle img,
+article .multimedia_detalle video {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+/* Galería de imágenes básica (mismas variables) */
+.galeria_increible {
+    display: flex;
+    gap: 10px; /* Espacio entre imágenes */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.caja_imagen {
+    position: relative;
+    width: 100px; /* Ancho inicial */
+    height: 120px; /* Alto inicial */
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.caja_imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1; /* Imagen siempre visible */
+    transition: opacity 0.2s ease-in-out; /* Transición simple */
+}
+
+.caja_imagen .texto_datos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    opacity: 0; /* Oculto inicialmente */
+    transition: opacity 0.2s ease-in-out; /* Transición simple */
+    font-size: 0.8em;
+}
+
+.caja_imagen:hover img {
+    opacity: 0.8; /* Ligeramente desvanecido al hacer hover */
+}
+
+.caja_imagen:hover .texto_datos {
+    opacity: 1; /* Visible al hacer hover */
+}
+
+/* Aside */
+aside {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #ff0000"
+}
+
+/* Cuadrícula de trayectoria básica (mismas variables) */
+.contenedor_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ancho mínimo más pequeño */
+    grid-gap: 10px; /* Espacio más pequeño */
+    width: 90%; /* Ancho un poco menor */
+    max-width: 800px; /* Ancho máximo menor */
+    margin-top: 15px; /* Margen superior menor */
+}
+
+.caja {
+    height: 120px; /* Altura menor */
+    border-radius: 5px; /* Borde menos redondeado */
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    transition: transform 0.1s ease-in-out; /* Transición más rápida y simple */
+}
+
+.caja:hover {
+    transform: translateY(-2px); /* Desplazamiento menor */
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); /* Sombra más suave al hover */
+}
+
+.caja img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 1; /* Imagen siempre visible */
+    transition: opacity 0.1s ease-in-out; /* Transición más rápida y simple */
+}
+
+.caja:hover img {
+    opacity: 0.9; /* Ligeramente menos opaco al hover */
+}
+
+.caja p {
+    position: absolute;
+    bottom: 5px; /* Más cerca del borde inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Fondo más transparente */
+    color: white; /* Texto blanco más común */
+    padding: 5px 8px; /* Padding más pequeño */
+    font-size: 0.8em; /* Fuente más pequeña */
+    border-radius: 5px; /* Borde menos redondeado */
+    width: 90%; /* Ancho del texto un poco mayor */
+    text-align: center;
+    font-weight: normal; /* Peso de fuente normal */
+    opacity: 1;
+}
+
+/* Footer básico */
+footer {
+    width: 100%;
+    background-color: black; /* Fondo negro sólido */
+    color: white; /* Texto blanco */
+    text-align: center;
+    padding: 10px 0; /* Padding vertical simple */
+    font-size: 0.8em; /* Tamaño de fuente más pequeño */
+    margin-top: 20px; /* Margen superior más pequeño */
+}
+
+footer p {
+    margin: 3px 0; /* Márgenes de párrafo más pequeños */
+}
+
+body {
+                font-family: sans-serif;
+                line-height: 1.5;
+                margin: 10px;
+                background-color: #444444;
+                color: #333;
+            }
+            .texto_discurso {
+                max-width: 600px;
+                margin: 20px auto;
+                padding: 15px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            h1 {
+                text-align: center;
+                color: #000000;
+                margin-bottom: 15px;
+                font-size: 1.8em;
+            }
+            .saludo {
+                font-weight: bold;
+                color: #007bff;
+                margin-bottom: 8px;
+            }
+            .firma {
+                text-align: right;
+                font-weight: bold;
+                color: #dc3545;
+                margin-top: 10px;
+                font-size: 0.9em;
+            }
+            .titulo_motivo {
+                font-weight: bold;
+                color: #007bff;
+                margin-bottom: 8px;
+            }
+            .contenedor_video {
+            margin-top: 15px; /* Margen superior reducido */
+            text-align: center;
+    }
+    .contenedor_video video {
+        max-width: 80%; /* Ancho máximo reducido */
+        border: 1px solid #bbb;
+        height: auto; /* La altura se ajusta proporcionalmente */
+    }
