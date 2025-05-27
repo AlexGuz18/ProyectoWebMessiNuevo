@@ -6,6 +6,7 @@
     <title>MESSI GOAT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="MessiEstilo.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='MessiEstilo.css') }}">
 </head>
 <body>
     <nav>
@@ -208,7 +209,7 @@
             if (comentario.trim() === '') {
                 alert('Por favor, escribe un comentario antes de enviar.');
                 return;
-            }
+            } 
 
             // Usamos un objeto para enviar JSON, que es común con Flask
             const data = { 'comentario': comentario };
