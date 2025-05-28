@@ -1,4 +1,4 @@
-APagina Web Messi
+Pagina Web Messi
 Esta es una aplicación web básica desarrollada con Flask en Python, diseñada para permitir a los usuarios dejar comentarios y ver los comentarios guardados.
 
 Características
@@ -6,15 +6,18 @@ Guardar Comentarios: Permite a los usuarios enviar comentarios a través de una 
 
 Ver Comentarios: Permite recuperar y mostrar todos los comentarios guardados a través de una API REST (/ver_comentarios).
 
-Estructura del Proyecto
-Para que la aplicación funcione correctamente, tu directorio de proyecto debe tener la siguiente estructura (todos los archivos en la misma carpeta):
+Estructura del proyecto
 
-tu_proyecto/
-├── app.py              # El script principal de la aplicación Flask
-├── Messi.html          # La página web principal sobre Messi
-├── comentarios.txt     # Archivo donde se guardan los comentarios (se crea automáticamente)
-├── tu_imagen.jpg       # Ejemplo de una imagen (si usas alguna en Messi.html)
-└── tu_estilo.css       # Ejemplo de un archivo CSS (si usas alguno en Messi.html)
+Para que la aplicación funcione correctamente, tu directorio de proyecto (por ejemplo, PaginaWebMessi) debe contener todos los archivos principales. Si esta carpeta está anidada dentro de otra, la estructura sería similar a esta:
+
+directorio_padre/
+└── PaginaWebMessi/      # Esta es tu carpeta de proyecto principal
+    ├── app.py              # El script principal de la aplicación Flask
+    ├── Messi.html          # La página web principal sobre Messi
+    ├── comentarios.txt     # Archivo donde se guardan los comentarios (se crea automáticamente)
+    ├── tu_imagen.jpg       # Ejemplo de una imagen (si usas alguna en Messi.html)
+    └── tu_estilo.css       # Ejemplo de un archivo CSS (si usas alguno en Messi.html)
+
 
 Requisitos
 Asegúrate de tener Python instalado en tu sistema.
