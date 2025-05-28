@@ -18,6 +18,8 @@ directorio_padre/
     ├── tu_imagen.jpg       # Ejemplo de una imagen (si usas alguna en Messi.html)
     └── tu_estilo.css       # Ejemplo de un archivo CSS (si usas alguno en Messi.html)
 
+ESTA ES LA FORMA QUE LO TENGO YO, PARA QUE ME FUNCIONE LOS COMENTARIOS;
+O PUEDE CALAR SIN USAR SUBCARPETA Y TODO EN UNA MISMA CARPETA.
 
 Requisitos
 Asegúrate de tener Python instalado en tu sistema.
