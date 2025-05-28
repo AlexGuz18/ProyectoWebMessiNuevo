@@ -25,6 +25,8 @@ Asegúrate de tener Python instalado en tu sistema.
 Instalación
 Clona este repositorio (si lo tienes en GitHub) o descarga los archivos directamente.
 
+PASOS:
+
 Navega al directorio del proyecto en tu terminal:
 
 cd /ruta/a/tu_proyecto
@@ -51,3 +53,8 @@ Dejar un comentario: En la página Messi.html
 
 Ver comentarios: Puedes acceder a los comentarios guardados en el archivo comentarios.txt
 
+NOTA: ESTO ES PARA QUE PUEDAS PROBAR LA PAGINA WEB CON TODAS LAS IMAGENES CARGADAS, Y PUEDAS ENVIAR LOS COMENTARIOS
+
+2DA OPCION: PUEDES HACER LOS MISMOS PASOS, PERO SOLO CARGA LA PRIMERA PAGINA, PERO TAMPOCO CARGA LAS IMAGENES, PERO SI FUNCIONA LA FUNCION DE LOS COMENTARIOS
+
+ASI QUE PREFIERO MEJOR LO HAGA COMO LA PRIMERA OPCION 
